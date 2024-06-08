@@ -28,7 +28,7 @@
     </form>
 
     <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
-        <form action="\filter" method="post">
+        <form action="/filter" method="post">
             <div class="mb-3">
                 <label for="date" class="form-label">Filter by date</label>
                 <input type="date" class="form-control" id="date" name="date">
@@ -37,6 +37,15 @@
         </form>
     </div>
 
+    <div class="container" style="margin-top: 20px;margin-bottom: 20px;">
+      <form action="/todo/filter" method="post">
+          <div class="mb-3">
+              <label for="name" class="form-label">Filter by todo name</label>
+              <input type="text" class="form-control" id="date" name="name">
+          </div>
+          <button class="btn btn-success  ">FILTER</button>
+      </form>
+    </div>
 
     <div class="container" style="margin-top: 20px;margin-bottom: 20px">
         <form action="/name/filter" method="post">
